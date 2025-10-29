@@ -2285,7 +2285,7 @@ ul.social li a.fa-google-plus:hover {
 }
 
 #banner header {
-  background-color: rgb(34 30 31 / 41%);
+  /*background-color: rgb(34 30 31 / 41%);*/
   display: inline-block;
   padding: 2.5em 5em;
   border-radius: 5px;

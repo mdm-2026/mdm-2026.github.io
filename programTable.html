@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MDM 2026 Event Schedule</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: sans-serif;
+      table-layout: fixed;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .time-col {
+      font-weight: bold;
+      background-color: #e0e0e0;
+      width: 110px;
+      font-size: 0.85em;
+    }
+
+    .day-header { font-weight: bold; }
+    
+    /* Event Colors */
+    .break { background-color: #D5E8D4; }
+    .lunch { background-color: #D5E8D4; }
+    .registration { background-color: #C5E0B4; }
+    .keynote { background-color: #fce4d6; }
+    .other-event { background-color: #f9f1eb; }
+    .research-col { background-color: rgb(157, 207, 240); }
+    .workshop-col { background-color: #fdc7f9; }
+    .invtalk-col { background-color: #df31d3; }
+    .panel-col { background-color: #ec9e28; }
+    .rec-col{ background-color: #fff59c; }
+    
+    /* Explicitly White Empty Boxes */
+    .empty-box { background-color: #ffffff; }
+  </style>
+</head>
+
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="time-col">Time</th>
+        <th class="day-header" colspan="2">Day 1 (Mon, June 29th)</th>
+        <th class="day-header" colspan="2">Day 2 (Tue. June 30th)</th>
+        <th class="day-header" colspan="2">Day 3 (Wed, July 1st)</th>
+        <th class="day-header" colspan="2">Day 4 (Thu, July 2nd)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="time-col">08.00 AM</td>
+        <td class="registration" rowspan="3" colspan="2">Registration Open</td>
+        <td class="registration" rowspan="3" colspan="2">Registration Open</td>
+        <td class="registration" rowspan="3" colspan="2">Registration Open</td>
+        <td class="registration" rowspan="3" colspan="2">Registration Open</td>
+      </tr>
+      <tr><td class="time-col">08.15 AM</td></tr>
+      <tr><td class="time-col">08.30 AM</td></tr>
+      <tr>
+        <td class="time-col">08.45 AM</td>
+        <td class="empty-box" rowspan="1" colspan="2"></td> <td class="research-col" rowspan="1" colspan="2">Opening Remarks</td>
+        <td class="empty-box" rowspan="1" colspan="2"></td> <td class="empty-box" rowspan="1" colspan="2"></td> </tr>
+
+      <tr>
+        <td class="time-col">09.00 AM</td>
+        <td class="workshop-col" rowspan="6" colspan="1">MuseKDE</td>
+        <td class="workshop-col" rowspan="6" colspan="1">DigiTwinsAI</td>
+        <td class="keynote" rowspan="5" colspan="2">Keynote 1</td>
+        <td class="keynote" rowspan="5" colspan="2">Keynote 3</td>
+        <td class="keynote" rowspan="5" colspan="2">Awards Ceremony </td>
+      </tr>
+      <tr><td class="time-col">09.15 AM</td></tr>
+      <tr><td class="time-col">09.30 AM</td></tr>
+      <tr><td class="time-col">09.45 AM</td></tr>
+      <tr><td class="time-col">10.00 AM</td></tr>
+      
+      <tr>
+        <td class="time-col">10.15 AM</td>
+        <td class="break" rowspan="2" colspan="2">Coffee</td>
+        <td class="break" rowspan="2" colspan="2">Coffee</td>
+        <td class="break" rowspan="2" colspan="2">Coffee</td>
+      </tr>
+      <tr>
+        <td class="time-col">10.30 AM</td>
+        <td class="break" rowspan="2" colspan="2">Coffee</td>
+      </tr>
+      <tr>
+        <td class="time-col">10.45 AM</td>
+        <td class="research-col" rowspan="8" colspan="2">Research Session 1</td>
+        <td class="research-col" rowspan="8" colspan="2">Research Session 3</td>
+        <td class="research-col" rowspan="4" colspan="2">Industry Session</td>
+      </tr>
+
+      <tr>
+        <td class="time-col">11.00 AM</td>
+        <td class="workshop-col" rowspan="6" colspan="1">MuseKDE</td>
+        <td class="workshop-col" rowspan="6" colspan="1">DigiTwinsAI</td>
+      </tr>
+      <tr><td class="time-col">11.15 AM</td></tr>
+      <tr><td class="time-col">11.30 AM</td></tr>
+      <tr>
+        <td class="time-col">11.45 AM</td>
+        <td class="invtalk-col" rowspan="4" colspan="2">Industry Panel</td>
+      </tr>
+      <tr><td class="time-col">12.00 PM</td></tr>
+      <tr><td class="time-col">12.15 PM</td></tr>
+      
+      <tr>
+        <td class="time-col">12.30 PM</td>
+        <td class="lunch" rowspan="4" colspan="2">Lunch</td>
+      </tr>
+      <tr>
+        <td class="time-col">12.45 PM</td>
+        <td class="lunch" rowspan="5" colspan="2">Lunch</td>
+        <td class="lunch" rowspan="5" colspan="2">Lunch</td>
+        <td class="lunch" rowspan="5" colspan="2">Lunch</td>
+      </tr>
+      <tr><td class="time-col">01.00 PM</td></tr>
+      <tr><td class="time-col">01.15 PM</td></tr>
+      
+      <tr>
+        <td class="time-col">01.30 PM</td>
+        <td class="workshop-col" rowspan="6" colspan="1">DCSSL</td>
+        <td class="workshop-col" rowspan="6" colspan="1">SIDS</td>
+      </tr>
+      <tr><td class="time-col">01.45 PM</td></tr>
+      <tr>
+        <td class="time-col">02.00 PM</td>
+        <td class="keynote" rowspan="5" colspan="2">Keynote 2</td>
+        <td class="keynote" rowspan="5" colspan="2">Invited Talk </td>
+        <td  rowspan="5" colspan="2">PhD Showcase/ <br> Doctoral Forum</td>
+      </tr>
+      <tr><td class="time-col">02.15 PM</td></tr>
+      <tr><td class="time-col">02.30 PM</td></tr>
+      <tr><td class="time-col">02.45 PM</td></tr>
+      
+      <tr>
+        <td class="time-col">03.00 PM</td>
+        <td class="break" rowspan="1" colspan="2">Coffee</td>
+      </tr>
+      <tr>
+        <td class="time-col">03.15 PM</td>
+        <td class="panel-col" rowspan="6" colspan="1">Tutorial 1</td>
+        <td class="panel-col" rowspan="12" colspan="1">Tutorial 2</td>
+        <td class="break" rowspan="1" colspan="2">Coffee</td>
+        <td class="break" rowspan="1" colspan="2">Coffee</td>
+                <td class="break" rowspan="1" colspan="2">Coffee</td>
+        <!-- <td class="panel-col" rowspan="8" colspan="2">PhD Showcase /<br>Doctoral Forum</td> -->
+      </tr>
+      <tr>
+        <td class="time-col">03.30 PM</td>
+         <td class="research-col" rowspan="6" colspan="2">Research Session 2</td>
+         <td class="research-col" rowspan="6" colspan="2">Research Session 4</td>
+         <td class="research-col" rowspan="6" colspan="2">Research Session 5</td>
+        
+      </tr>
+      <tr>
+        <td class="time-col">03.45 PM</td>
+     
+      </tr>
+      <tr><td class="time-col">04.00 PM</td></tr>
+      <tr><td class="time-col">04.15 PM</td></tr>
+      <tr><td class="time-col">04.30 PM</td></tr>
+
+      <tr>
+        <td class="time-col">04.45 PM</td>
+        
+        <td class="empty-box" rowspan="12" colspan="1"></td>
+        
+       
+        <!-- <td class="empty-box" rowspan="6" colspan="2"></td> </tr> -->
+      <tr><td class="time-col">05.00 PM</td>
+      <td  rowspan="5" colspan="2">Demos / <br> Posters</td>
+       <td class="invtalk-col" rowspan="5" colspan="2">Panel Discussion</td>
+    </tr>
+      <tr><td class="time-col">05.15 PM</td>
+    <!-- <td class="empty-box" rowspan="12" colspan="2"></td> -->
+    </tr>
+      <tr><td class="time-col">05.30 PM</td></tr>
+      <tr><td class="time-col">05.45 PM</td></tr>
+      <tr><td class="time-col">06.00 PM</td></tr>
+       <tr><td class="time-col">06.15 PM</td>
+ <td class="empty-box" rowspan="6" colspan="1"></td>
+ <td class="rec-col" rowspan="3" colspan="2">Reception/Demos</td>
+   <td class="empty-box" rowspan="1" colspan="2"></td>
+   
+
+    </tr>
+
+       <tr><td class="time-col">08.00 PM</td>
+      <td class="rec-col" rowspan="3" colspan="2">Banquet</td></tr></tr>
+       <tr><td class="time-col">08.45 PM</td>
+  
+       <tr><td class="time-col">09.00 PM</td>
+      <td class="empty-box" rowspan="1" colspan="2"></td>
+    </tr>
+    </tbody>
+  </table>
+
+</body>
+
+</html>

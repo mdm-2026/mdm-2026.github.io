@@ -7,15 +7,16 @@
     table {
       border-collapse: collapse;
       width: 100%;
+      min-width: 950px; /* Forces the table to stay wide enough to trigger scroll */
       font-family: sans-serif;
-      table-layout: fixed;
     }
-
+    
     th, td {
       border: 1px solid black;
       padding: 8px;
       text-align: center;
       vertical-align: middle;
+      white-space: nowrap; /* Prevents text from breaking onto multiple lines */
     }
 
     th {
@@ -54,146 +55,144 @@
     <thead>
       <tr>
         <th class="time-col">Time</th>
-        <th class="day-header" colspan="2">Day 1 (Mon, June 29th)</th>
-        <th class="day-header" colspan="2">Day 2 (Tue. June 30th)</th>
-        <th class="day-header" colspan="2">Day 3 (Wed, July 1st)</th>
-        <th class="day-header" colspan="2">Day 4 (Thu, July 2nd)</th>
+        <th class="day-header" colspan="2">Day 1 (Mon, 29 June)</th>
+        <th class="day-header" colspan="2">Day 2 (Tue. 30 June)</th>
+        <th class="day-header" colspan="2">Day 3 (Wed, 1 July)</th>
+        <th class="day-header" colspan="2">Day 4 (Thu, 2 July)</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="time-col">08.00 AM</td>
+        <td class="time-col">08:00</td>
         <td class="registration" rowspan="3" colspan="2">Registration Open</td>
         <td class="registration" rowspan="3" colspan="2">Registration Open</td>
         <td class="registration" rowspan="3" colspan="2">Registration Open</td>
         <td class="registration" rowspan="3" colspan="2">Registration Open</td>
       </tr>
-      <tr><td class="time-col">08.15 AM</td></tr>
-      <tr><td class="time-col">08.30 AM</td></tr>
+      <tr><td class="time-col">08:15</td></tr>
+      <tr><td class="time-col">08:30</td></tr>
       <tr>
-        <td class="time-col">08.45 AM</td>
+        <td class="time-col">08:45</td>
         <td class="empty-box" rowspan="1" colspan="2"></td> <td class="research-col" rowspan="1" colspan="2">Opening Remarks</td>
         <td class="empty-box" rowspan="1" colspan="2"></td> <td class="empty-box" rowspan="1" colspan="2"></td> </tr>
 
       <tr>
-        <td class="time-col">09.00 AM</td>
+        <td class="time-col">09:00</td>
         <td class="workshop-col" rowspan="6" colspan="1">MuseKDE</td>
         <td class="workshop-col" rowspan="6" colspan="1">DigiTwinsAI</td>
         <td class="keynote" rowspan="5" colspan="2">Keynote 1</td>
         <td class="keynote" rowspan="5" colspan="2">Keynote 3</td>
         <td class="keynote" rowspan="5" colspan="2">Awards Ceremony </td>
       </tr>
-      <tr><td class="time-col">09.15 AM</td></tr>
-      <tr><td class="time-col">09.30 AM</td></tr>
-      <tr><td class="time-col">09.45 AM</td></tr>
-      <tr><td class="time-col">10.00 AM</td></tr>
+      <tr><td class="time-col">09:15</td></tr>
+      <tr><td class="time-col">09:30</td></tr>
+      <tr><td class="time-col">09:45</td></tr>
+      <tr><td class="time-col">10:00</td></tr>
       
       <tr>
-        <td class="time-col">10.15 AM</td>
+        <td class="time-col">10:15</td>
         <td class="break" rowspan="2" colspan="2">Coffee</td>
         <td class="break" rowspan="2" colspan="2">Coffee</td>
         <td class="break" rowspan="2" colspan="2">Coffee</td>
       </tr>
       <tr>
-        <td class="time-col">10.30 AM</td>
+        <td class="time-col">10:30</td>
         <td class="break" rowspan="2" colspan="2">Coffee</td>
       </tr>
       <tr>
-        <td class="time-col">10.45 AM</td>
+        <td class="time-col">10:45</td>
         <td class="research-col" rowspan="8" colspan="2">Research Session 1</td>
         <td class="research-col" rowspan="8" colspan="2">Research Session 3</td>
         <td class="research-col" rowspan="4" colspan="2">Industry Session</td>
       </tr>
 
       <tr>
-        <td class="time-col">11.00 AM</td>
+        <td class="time-col">11:00</td>
         <td class="workshop-col" rowspan="6" colspan="1">MuseKDE</td>
         <td class="workshop-col" rowspan="6" colspan="1">DigiTwinsAI</td>
       </tr>
-      <tr><td class="time-col">11.15 AM</td></tr>
-      <tr><td class="time-col">11.30 AM</td></tr>
+      <tr><td class="time-col">11:15</td></tr>
+      <tr><td class="time-col">11:30</td></tr>
       <tr>
-        <td class="time-col">11.45 AM</td>
+        <td class="time-col">11:45</td>
         <td class="invtalk-col" rowspan="4" colspan="2">Industry Panel</td>
       </tr>
-      <tr><td class="time-col">12.00 PM</td></tr>
-      <tr><td class="time-col">12.15 PM</td></tr>
+      <tr><td class="time-col">12:00</td></tr>
+      <tr><td class="time-col">12:15</td></tr>
       
       <tr>
-        <td class="time-col">12.30 PM</td>
+        <td class="time-col">12:30</td>
         <td class="lunch" rowspan="4" colspan="2">Lunch</td>
       </tr>
       <tr>
-        <td class="time-col">12.45 PM</td>
+        <td class="time-col">12:45</td>
         <td class="lunch" rowspan="5" colspan="2">Lunch</td>
         <td class="lunch" rowspan="5" colspan="2">Lunch</td>
         <td class="lunch" rowspan="5" colspan="2">Lunch</td>
       </tr>
-      <tr><td class="time-col">01.00 PM</td></tr>
-      <tr><td class="time-col">01.15 PM</td></tr>
+      <tr><td class="time-col">13:00</td></tr>
+      <tr><td class="time-col">13:15</td></tr>
       
       <tr>
-        <td class="time-col">01.30 PM</td>
+        <td class="time-col">13:30</td>
         <td class="workshop-col" rowspan="6" colspan="1">DCSSL</td>
         <td class="workshop-col" rowspan="6" colspan="1">SIDS</td>
       </tr>
-      <tr><td class="time-col">01.45 PM</td></tr>
+      <tr><td class="time-col">13:45</td></tr>
       <tr>
-        <td class="time-col">02.00 PM</td>
+        <td class="time-col">14:00</td>
         <td class="keynote" rowspan="5" colspan="2">Keynote 2</td>
         <td class="keynote" rowspan="5" colspan="2">Invited Talk </td>
         <td  rowspan="5" colspan="2">PhD Showcase/ <br> Doctoral Forum</td>
       </tr>
-      <tr><td class="time-col">02.15 PM</td></tr>
-      <tr><td class="time-col">02.30 PM</td></tr>
-      <tr><td class="time-col">02.45 PM</td></tr>
+      <tr><td class="time-col">14:15</td></tr>
+      <tr><td class="time-col">14:30</td></tr>
+      <tr><td class="time-col">14:45</td></tr>
       
       <tr>
-        <td class="time-col">03.00 PM</td>
+        <td class="time-col">15:00</td>
         <td class="break" rowspan="1" colspan="2">Coffee</td>
       </tr>
       <tr>
-        <td class="time-col">03.15 PM</td>
+        <td class="time-col">15:15</td>
         <td class="panel-col" rowspan="6" colspan="1">Tutorial 1</td>
         <td class="panel-col" rowspan="12" colspan="1">Tutorial 2</td>
         <td class="break" rowspan="1" colspan="2">Coffee</td>
         <td class="break" rowspan="1" colspan="2">Coffee</td>
                 <td class="break" rowspan="1" colspan="2">Coffee</td>
-        <!-- <td class="panel-col" rowspan="8" colspan="2">PhD Showcase /<br>Doctoral Forum</td> -->
       </tr>
       <tr>
-        <td class="time-col">03.30 PM</td>
+        <td class="time-col">15:30</td>
          <td class="research-col" rowspan="6" colspan="2">Research Session 2</td>
          <td class="research-col" rowspan="6" colspan="2">Research Session 4</td>
          <td class="research-col" rowspan="6" colspan="2">Research Session 5</td>
         
       </tr>
       <tr>
-        <td class="time-col">03.45 PM</td>
-     
+        <td class="time-col">15:45</td>
+      
       </tr>
-      <tr><td class="time-col">04.00 PM</td></tr>
-      <tr><td class="time-col">04.15 PM</td></tr>
-      <tr><td class="time-col">04.30 PM</td></tr>
+      <tr><td class="time-col">16:00</td></tr>
+      <tr><td class="time-col">16:15</td></tr>
+      <tr><td class="time-col">16:30</td></tr>
 
       <tr>
-        <td class="time-col">04.45 PM</td>
+        <td class="time-col">16:45</td>
         
         <td class="empty-box" rowspan="12" colspan="1"></td>
         
        
-        <!-- <td class="empty-box" rowspan="6" colspan="2"></td> </tr> -->
-      <tr><td class="time-col">05.00 PM</td>
+      </tr>
+      <tr><td class="time-col">17:00</td>
       <td  rowspan="5" colspan="2">Demos / <br> Posters</td>
        <td class="invtalk-col" rowspan="5" colspan="2">Panel Discussion</td>
     </tr>
-      <tr><td class="time-col">05.15 PM</td>
-    <!-- <td class="empty-box" rowspan="12" colspan="2"></td> -->
+      <tr><td class="time-col">17:15</td>
     </tr>
-      <tr><td class="time-col">05.30 PM</td></tr>
-      <tr><td class="time-col">05.45 PM</td></tr>
-      <tr><td class="time-col">06.00 PM</td></tr>
-       <tr><td class="time-col">06.15 PM</td>
+      <tr><td class="time-col">17:30</td></tr>
+      <tr><td class="time-col">17:45</td></tr>
+      <tr><td class="time-col">18:00</td></tr>
+       <tr><td class="time-col">18:15</td>
  <td class="empty-box" rowspan="6" colspan="1"></td>
  <td class="rec-col" rowspan="3" colspan="2">Reception/Demos</td>
    <td class="empty-box" rowspan="1" colspan="2"></td>
@@ -201,11 +200,11 @@
 
     </tr>
 
-       <tr><td class="time-col">08.00 PM</td>
+       <tr><td class="time-col">20:00</td>
       <td class="rec-col" rowspan="3" colspan="2">Banquet</td></tr></tr>
-       <tr><td class="time-col">08.45 PM</td>
+       <tr><td class="time-col">20:45</td>
   
-       <tr><td class="time-col">09.00 PM</td>
+       <tr><td class="time-col">21:00</td>
       <td class="empty-box" rowspan="1" colspan="2"></td>
     </tr>
     </tbody>
